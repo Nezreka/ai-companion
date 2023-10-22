@@ -36,6 +36,7 @@ const Navbar = ({
                     </h1>
                 </Link>
             </div>
+            <Update />
             <div className="flex items-center gap-x-3">
                 {!isPro && (
                     <Button onClick={proModal.onOpen} variant={"premium"} size={"sm"}>
@@ -47,7 +48,7 @@ const Navbar = ({
                 <ModeToggle />
                 <UserButton afterSignOutUrl="/" />
             </div>
-            <Update />
+            
         </div>
      );
 }

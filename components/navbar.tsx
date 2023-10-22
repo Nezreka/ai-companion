@@ -10,6 +10,7 @@ import Link from "next/link";
 import { ModeToggle } from "./mode-toggle";
 import MobileSidebar from "@/components/mobile-sidebar";
 import { useProModal } from "@/hooks/use-pro-modal";
+import Update from "./update";
 
 
 const font = Poppins({ weight: "600", subsets: ["latin"] })
@@ -46,6 +47,7 @@ const Navbar = ({
                 <ModeToggle />
                 <UserButton afterSignOutUrl="/" />
             </div>
+            <Update />
         </div>
      );
 }
